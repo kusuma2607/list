@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        text-align: center;
+        background-color: rgb(6, 248, 175);
+        margin-right: 300px;
+        margin-left: 300px;
+        border-radius: 10px;
+    }
+     h2{
+        text-align: center;
+     }
+     label{
+        display: block;
+       
+     }
+     input[type=text],
+     input[type=tel],
+     input[type=email],
+     input[type=month],
+     input[type=date],
+     input[type=datetime-local],
+     input[type=checkbox],
+     input[type=radio],
+     input[type=number],
+     input[type=password],
+     input[type=range],
+     input[type=file],
+     input[type=image],
+     input[type=button],
+     input[type=color],
+     input[type=reset],
+     input[type=url],
+     input[type=week],
+     input[type=time],
+     input[type=search],
+     textarea,select{
+        border-radius: 10px;
+     }
+     input[type=image]{
+        height:100px;
+        width:100px;
+        border-radius: 80%;
+     }
+     input[type=submit]{
+         background-color: rgb(156, 97, 20);
+         cursor: pointer;
+     }
+     input[type=submit]:hover{
+        background-color: rgb(114, 224, 3);
+     }
+
+     
+
+    </style>
+<body>
+    <h2>Registration Form</h2>
+    <form action="https://formspree.io/f/mpzgeovv" method="post">
+        <label><b>Name:</b></label>
+        <input type="text" name="Name" placeholder="Enter your name" required>
+        <label><b>Email:</b></label>
+        <input type="email" email="email" placeholder="Enter your email" required>
+        <label><b>Enter password:</b></label>
+        <input type="password" name="Enter password:" placeholder="Enter password" required>
+        <label><b>Date of birth:</b></label>
+        <input type="date" Date of birth="date" required>
+        <label><b>Gender:</b></label>
+        <select>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <label><b>Phone Number:</b></label>
+        <input type="text" name="country code" value="+91" size="2">
+        <input type="tel" phoneNumber="phoneNumber" placeholder="Enter phone number" required>
+        <label><b>Zipcode:</b></label>
+        <input type="text" zipcode="zipcode" placeholder="Enter code" required>
+        <label><b>Current Address:</b></label>
+        <textarea cols="30" rows="3" name="Current Address:" value="address" placeholder="Enter address" required></textarea>
+        <label><b>Qualification:</b></label>
+        Btech
+        <input type="checkbox" name="Qualification:" value="Btech" >
+        Mtech
+        <input type="checkbox" name="Qualification:" value="Mtech" >
+        BCOM
+        <input type="checkbox" name="Qualification:" value="BCOM" >
+        others
+        <input type="checkbox" name="Qualification:" value=others >
+        <label><b>Registration Number:</b></label>
+        <input type="number" name="Registration Number:" placeholder="Enter number">
+        <label><b>Pass percentage:</b></label>
+        <input type="range">
+        <label><b>Upload Resume:</b></label>
+        <input type="file" resume="file" required>
+        <label for="adm">Date of Admission:</label>
+        <input type="month" name="doa">
+        <label><b>Select language:</b></label>
+        HTML
+        <input type="radio" name="Select language:" value="HTML" >
+        CSS
+        <input type="radio" name="Select language:" value="CSS" >
+        Java script
+        <input type="radio" name="Select language:" value="Java script" >
+        others
+        <input type="radio" name="Select language:" value=others >
+        <label><b>Choose date and time:</b></label>
+        <input type="datetime-local" name="Choose date and time" required>
+        <label for="resume-url"><b>Resume URL:</b></label>
+        <input type="url" placeholder="Enter url" required>
+        <label for="adm"><b>Date of Admission:</b></label>
+        <input type="month" name="doa">
+        <label for="site-search"><b>Search the site:</b></label>
+        <input type="search" id="site-search" name="q" placeholder="search site🔍"/>
+        <label><b>Upload photo:</b></label>
+        <input type="image" img src="https://www.conversioner.com/wp-content/uploads/2015/10/Register-Button1.jpg">
+        <label><b>Reset</b></label>
+        <input type="reset" reset="reset" >
+        <label><b>Click Me</b></label>
+        <input type="button" onclick="alert('fill the above form!')" value="Click Me!">
+        <label><b>Submit</b></label>
+        <input type="submit" value="register">
+    </form>
+</body>
+</html>
